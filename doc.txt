@@ -1,0 +1,13 @@
+Polyline:
+demo:https://open-polyline-decoder.60devs.com/
+python package: https://pypi.org/project/polyline/
+
+data meaning :http://developers.strava.com/docs/reference/#api-Athletes-getLoggedInAthlete
+
+
+
+
+import pymysql
+
+
+pip3 install 'pymongo[srv]'
