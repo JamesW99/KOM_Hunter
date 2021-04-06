@@ -7,10 +7,10 @@ api = StravaAPI()
 def getTopSegments(blla, bllo, trla, trlo):
 
     ten_segment = StravaAPI.get_segment_explore(api, bounds=((blla, bllo), (trla, trlo))).values()
-    ten_segment_list = sorted(StravaAPI.get_segment_explore(api, bounds=((blla, bllo), (trla, trlo))).values())[0]  # this is a list include 10 segment dict
+    ten_segment_list = list(ten_segment)[0]  # this is a list include 10 segment dict
 
     try:
-        sorted(ten_segment)[1]
+        list(ten_segment)[1]
     except IndexError:
         pass
     else:
